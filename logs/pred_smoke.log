@@ -1,0 +1,44 @@
+[DDP Setup] Global Rank: 0/1, Local Rank (GPU): 0 on device 0
+[rank0]:[W515 11:24:31.155268059 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Loading weights from local directory
+Loading weights from local directory
+Predictor Model Size: 102.3M
+Effective BATCHSIZE per GPU: 32, Total: 32
+[Rank 0] Creating distributed dataloaders...
+[TRAIN] Pre-computing sample indices...
+[TRAIN] Found 174876 possible samples. Using 25600 per epoch.
+[VAL] Pre-computing sample indices...
+[VAL] Found 37557 possible samples. Using 3200 per epoch.
+[Rank 0] Train dataset size: 25600, Validation dataset size: 3200
+[Rank 0, Epoch 1/5, Step 50/800] LR 0.000018, Loss: 2.6871
+[Rank 0, Epoch 1/5, Step 100/800] LR 0.000038, Loss: 2.7224
+W0515 11:25:58.945000 66803 torch/distributed/elastic/agent/server/api.py:704] Received 15 death signal, shutting down workers
+W0515 11:25:58.946000 66803 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 66825 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/home/anson/quant-btc-gold/.venv/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 696, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 855, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 66803 got signal: 15

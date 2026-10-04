@@ -1,0 +1,126 @@
+[DDP Setup] Global Rank: 0/1, Local Rank (GPU): 0 on device 0
+[rank0]:[W515 11:26:07.948552042 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Loading weights from local directory
+Loading weights from local directory
+Predictor Model Size: 102.3M
+Effective BATCHSIZE per GPU: 32, Total: 32
+[Rank 0] Creating distributed dataloaders...
+[TRAIN] Pre-computing sample indices...
+[TRAIN] Found 174876 possible samples. Using 25600 per epoch.
+[VAL] Pre-computing sample indices...
+[VAL] Found 37557 possible samples. Using 3200 per epoch.
+[Rank 0] Train dataset size: 25600, Validation dataset size: 3200
+[Rank 0, Epoch 1/5, Step 50/800] LR 0.000018, Loss: 2.6871
+[Rank 0, Epoch 1/5, Step 100/800] LR 0.000038, Loss: 2.7224
+[Rank 0, Epoch 1/5, Step 150/800] LR 0.000040, Loss: 2.7010
+[Rank 0, Epoch 1/5, Step 200/800] LR 0.000040, Loss: 2.6632
+[Rank 0, Epoch 1/5, Step 250/800] LR 0.000040, Loss: 2.5305
+[Rank 0, Epoch 1/5, Step 300/800] LR 0.000040, Loss: 2.7045
+[Rank 0, Epoch 1/5, Step 350/800] LR 0.000040, Loss: 2.6486
+[Rank 0, Epoch 1/5, Step 400/800] LR 0.000039, Loss: 2.5615
+[Rank 0, Epoch 1/5, Step 450/800] LR 0.000039, Loss: 2.4815
+[Rank 0, Epoch 1/5, Step 500/800] LR 0.000039, Loss: 2.4978
+[Rank 0, Epoch 1/5, Step 550/800] LR 0.000039, Loss: 2.6296
+[Rank 0, Epoch 1/5, Step 600/800] LR 0.000039, Loss: 2.5988
+[Rank 0, Epoch 1/5, Step 650/800] LR 0.000038, Loss: 2.4281
+[Rank 0, Epoch 1/5, Step 700/800] LR 0.000038, Loss: 2.6418
+[Rank 0, Epoch 1/5, Step 750/800] LR 0.000037, Loss: 2.6864
+[Rank 0, Epoch 1/5, Step 800/800] LR 0.000037, Loss: 2.5301
+
+--- Epoch 1/5 Summary ---
+Validation Loss: 2.6110
+Time This Epoch: 0:09:48
+Total Time Elapsed: 0:09:48
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_predictor/checkpoints/best_model (Val Loss: 2.6110)
+[Rank 0, Epoch 2/5, Step 50/800] LR 0.000037, Loss: 2.4777
+[Rank 0, Epoch 2/5, Step 100/800] LR 0.000036, Loss: 2.5923
+[Rank 0, Epoch 2/5, Step 150/800] LR 0.000036, Loss: 2.5454
+[Rank 0, Epoch 2/5, Step 200/800] LR 0.000035, Loss: 2.5154
+[Rank 0, Epoch 2/5, Step 250/800] LR 0.000035, Loss: 2.5905
+[Rank 0, Epoch 2/5, Step 300/800] LR 0.000034, Loss: 2.5400
+[Rank 0, Epoch 2/5, Step 350/800] LR 0.000033, Loss: 2.4940
+[Rank 0, Epoch 2/5, Step 400/800] LR 0.000033, Loss: 2.5807
+[Rank 0, Epoch 2/5, Step 450/800] LR 0.000032, Loss: 2.4528
+[Rank 0, Epoch 2/5, Step 500/800] LR 0.000032, Loss: 2.5303
+[Rank 0, Epoch 2/5, Step 550/800] LR 0.000031, Loss: 2.5289
+[Rank 0, Epoch 2/5, Step 600/800] LR 0.000030, Loss: 2.5542
+[Rank 0, Epoch 2/5, Step 650/800] LR 0.000029, Loss: 2.4866
+[Rank 0, Epoch 2/5, Step 700/800] LR 0.000029, Loss: 2.4940
+[Rank 0, Epoch 2/5, Step 750/800] LR 0.000028, Loss: 2.4035
+[Rank 0, Epoch 2/5, Step 800/800] LR 0.000027, Loss: 2.4362
+
+--- Epoch 2/5 Summary ---
+Validation Loss: 2.6019
+Time This Epoch: 0:09:48
+Total Time Elapsed: 0:19:36
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_predictor/checkpoints/best_model (Val Loss: 2.6019)
+[Rank 0, Epoch 3/5, Step 50/800] LR 0.000027, Loss: 2.5026
+[Rank 0, Epoch 3/5, Step 100/800] LR 0.000026, Loss: 2.4559
+[Rank 0, Epoch 3/5, Step 150/800] LR 0.000025, Loss: 2.4785
+[Rank 0, Epoch 3/5, Step 200/800] LR 0.000024, Loss: 2.4065
+[Rank 0, Epoch 3/5, Step 250/800] LR 0.000023, Loss: 2.5330
+[Rank 0, Epoch 3/5, Step 300/800] LR 0.000023, Loss: 2.4055
+[Rank 0, Epoch 3/5, Step 350/800] LR 0.000022, Loss: 2.5007
+[Rank 0, Epoch 3/5, Step 400/800] LR 0.000021, Loss: 2.4439
+[Rank 0, Epoch 3/5, Step 450/800] LR 0.000020, Loss: 2.5453
+[Rank 0, Epoch 3/5, Step 500/800] LR 0.000019, Loss: 2.4343
+[Rank 0, Epoch 3/5, Step 550/800] LR 0.000019, Loss: 2.4319
+[Rank 0, Epoch 3/5, Step 600/800] LR 0.000018, Loss: 2.3882
+[Rank 0, Epoch 3/5, Step 650/800] LR 0.000017, Loss: 2.4423
+[Rank 0, Epoch 3/5, Step 700/800] LR 0.000016, Loss: 2.4593
+[Rank 0, Epoch 3/5, Step 750/800] LR 0.000015, Loss: 2.5015
+[Rank 0, Epoch 3/5, Step 800/800] LR 0.000015, Loss: 2.4191
+
+--- Epoch 3/5 Summary ---
+Validation Loss: 2.5996
+Time This Epoch: 0:09:49
+Total Time Elapsed: 0:29:26
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_predictor/checkpoints/best_model (Val Loss: 2.5996)
+[Rank 0, Epoch 4/5, Step 50/800] LR 0.000014, Loss: 2.4596
+[Rank 0, Epoch 4/5, Step 100/800] LR 0.000013, Loss: 2.4623
+[Rank 0, Epoch 4/5, Step 150/800] LR 0.000012, Loss: 2.4314
+[Rank 0, Epoch 4/5, Step 200/800] LR 0.000012, Loss: 2.4115
+[Rank 0, Epoch 4/5, Step 250/800] LR 0.000011, Loss: 2.4502
+[Rank 0, Epoch 4/5, Step 300/800] LR 0.000010, Loss: 2.4731
+[Rank 0, Epoch 4/5, Step 350/800] LR 0.000009, Loss: 2.4271
+[Rank 0, Epoch 4/5, Step 400/800] LR 0.000009, Loss: 2.5172
+[Rank 0, Epoch 4/5, Step 450/800] LR 0.000008, Loss: 2.4613
+[Rank 0, Epoch 4/5, Step 500/800] LR 0.000007, Loss: 2.4746
+[Rank 0, Epoch 4/5, Step 550/800] LR 0.000007, Loss: 2.4256
+[Rank 0, Epoch 4/5, Step 600/800] LR 0.000006, Loss: 2.3265
+[Rank 0, Epoch 4/5, Step 650/800] LR 0.000006, Loss: 2.4228
+[Rank 0, Epoch 4/5, Step 700/800] LR 0.000005, Loss: 2.3614
+[Rank 0, Epoch 4/5, Step 750/800] LR 0.000005, Loss: 2.4563
+[Rank 0, Epoch 4/5, Step 800/800] LR 0.000004, Loss: 2.5155
+
+--- Epoch 4/5 Summary ---
+Validation Loss: 2.6029
+Time This Epoch: 0:09:47
+Total Time Elapsed: 0:39:14
+
+[Rank 0, Epoch 5/5, Step 50/800] LR 0.000004, Loss: 2.3823
+[Rank 0, Epoch 5/5, Step 100/800] LR 0.000003, Loss: 2.5107
+[Rank 0, Epoch 5/5, Step 150/800] LR 0.000003, Loss: 2.3762
+[Rank 0, Epoch 5/5, Step 200/800] LR 0.000002, Loss: 2.3334
+[Rank 0, Epoch 5/5, Step 250/800] LR 0.000002, Loss: 2.4232
+[Rank 0, Epoch 5/5, Step 300/800] LR 0.000002, Loss: 2.4891
+[Rank 0, Epoch 5/5, Step 350/800] LR 0.000001, Loss: 2.5053
+[Rank 0, Epoch 5/5, Step 400/800] LR 0.000001, Loss: 2.4481
+[Rank 0, Epoch 5/5, Step 450/800] LR 0.000001, Loss: 2.4129
+[Rank 0, Epoch 5/5, Step 500/800] LR 0.000001, Loss: 2.4179
+[Rank 0, Epoch 5/5, Step 550/800] LR 0.000000, Loss: 2.5301
+[Rank 0, Epoch 5/5, Step 600/800] LR 0.000000, Loss: 2.4242
+[Rank 0, Epoch 5/5, Step 650/800] LR 0.000000, Loss: 2.4425
+[Rank 0, Epoch 5/5, Step 700/800] LR 0.000000, Loss: 2.3347
+[Rank 0, Epoch 5/5, Step 750/800] LR 0.000000, Loss: 2.4098
+[Rank 0, Epoch 5/5, Step 800/800] LR 0.000000, Loss: 2.4541
+
+--- Epoch 5/5 Summary ---
+Validation Loss: 2.6027
+Time This Epoch: 0:09:47
+Total Time Elapsed: 0:49:01
+
+Training finished. Summary file saved.

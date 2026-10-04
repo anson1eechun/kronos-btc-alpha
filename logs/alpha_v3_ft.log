@@ -1,0 +1,52 @@
+Loading weights from local directory
+Loading weights from local directory
+  1/300 elapsed=4s eta=1072s
+  20/300 elapsed=67s eta=933s
+  40/300 elapsed=134s eta=873s
+  60/300 elapsed=202s eta=808s
+  80/300 elapsed=270s eta=741s
+  100/300 elapsed=337s eta=674s
+  120/300 elapsed=405s eta=607s
+  140/300 elapsed=472s eta=540s
+  160/300 elapsed=540s eta=472s
+  180/300 elapsed=607s eta=405s
+  200/300 elapsed=675s eta=337s
+  220/300 elapsed=743s eta=270s
+  240/300 elapsed=810s eta=203s
+  260/300 elapsed=878s eta=135s
+  280/300 elapsed=945s eta=68s
+  300/300 elapsed=1013s eta=0s
+saved → /home/anson/Kronos/alpha_v3_ft/raw.pkl (0.3 MB)
+
+=== 採樣數比較 (cost=0%) ===
+ samples   n   acc     ic win_rate sharpe cum_cmp   maxdd
+       5 300 0.500 -0.055    0.497  -0.14  -1.46% -11.55%
+      10 300 0.503 -0.053    0.500  -1.01  -5.03% -16.14%
+      20 300 0.510 -0.052    0.507  +1.25  +4.54%  -8.66%
+
+=== 交易成本敏感度 (samples=20, 假設每筆獨立 round-trip) ===
+ cost_bp   n win_rate sharpe cum_cmp   maxdd
+       0 300    0.507  +1.25  +4.54%  -8.66%
+       4 300    0.480  -1.58  -7.29% -12.49%
+       8 300    0.447  -4.42 -17.78% -19.66%
+      16 300    0.373 -10.08 -35.34% -36.36%
+
+=== Walk-forward (前 60% vs 後 40%, samples=20, cost=0.08%) ===
+  seg   n   acc win_rate sharpe cum_cmp   maxdd
+前 60% 180 0.528    0.467  -1.15  -3.72% -12.56%
+後 40% 120 0.483    0.417 -10.86 -14.60% -16.17%
+   全部 300 0.510    0.447  -4.42 -17.78% -19.66%
+
+=== Regime 拆解 by 200-bar (50h) log-price slope, 年化 ===
+regime   n   acc long_share win_rate sharpe cum_cmp   maxdd
+    UP 144 0.521       0.26    0.458  -0.32  -1.06%  -8.61%
+  SIDE  11 0.727       0.64    0.636  -4.72  -0.24%  -1.06%
+  DOWN 145 0.483       0.78    0.421  -8.50 -16.70% -18.03%
+   ALL 300 0.510       0.52    0.447  -4.42 -17.78% -19.66%
+
+=== |prob-0.5|>0.2 高信心 gate × Regime (cost=0.08%) ===
+  n      mean      std    sharpe   cum_cmp     maxdd  win_rate regime  n_hi   acc_hi
+131 -0.000637 0.007041 -4.885157 -0.083013 -0.119318  0.427481     UP   131 0.496183
+ 10 -0.000280 0.002567 -5.904406 -0.002834 -0.010555  0.600000   SIDE    10 0.700000
+132 -0.001252 0.007963 -8.499015 -0.156008 -0.169509  0.416667   DOWN   132 0.484848
+273 -0.000921 0.007403 -6.725257 -0.228263 -0.245962  0.428571    ALL   273 0.498168

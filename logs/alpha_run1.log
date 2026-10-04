@@ -1,0 +1,43 @@
+Loading weights from local directory
+Loading weights from local directory
+[1/30] idx=400 prob_up=0.00 pred_mean=-1.756% actual=-0.314% elapsed=5s eta=149s
+[2/30] idx=989 prob_up=1.00 pred_mean=+3.001% actual=-0.631% elapsed=10s eta=141s
+[3/30] idx=1578 prob_up=0.27 pred_mean=-1.142% actual=+4.896% elapsed=15s eta=135s
+[4/30] idx=2168 prob_up=1.00 pred_mean=+5.972% actual=+7.082% elapsed=20s eta=130s
+[5/30] idx=2757 prob_up=0.93 pred_mean=+1.412% actual=-0.094% elapsed=25s eta=125s
+[6/30] idx=3347 prob_up=0.00 pred_mean=-2.588% actual=+3.165% elapsed=30s eta=120s
+[7/30] idx=3936 prob_up=0.00 pred_mean=-4.791% actual=-1.406% elapsed=35s eta=115s
+[8/30] idx=4526 prob_up=0.00 pred_mean=-10.445% actual=-1.913% elapsed=40s eta=111s
+[9/30] idx=5115 prob_up=0.00 pred_mean=-1.231% actual=-1.795% elapsed=45s eta=106s
+[10/30] idx=5705 prob_up=0.20 pred_mean=-0.972% actual=-0.247% elapsed=51s eta=101s
+[11/30] idx=6294 prob_up=0.33 pred_mean=-0.207% actual=+1.224% elapsed=56s eta=96s
+[12/30] idx=6884 prob_up=0.00 pred_mean=-0.614% actual=-1.004% elapsed=61s eta=91s
+[13/30] idx=7473 prob_up=0.20 pred_mean=-0.848% actual=-0.926% elapsed=66s eta=86s
+[14/30] idx=8063 prob_up=0.93 pred_mean=+1.977% actual=+4.900% elapsed=71s eta=81s
+[15/30] idx=8652 prob_up=0.20 pred_mean=-0.665% actual=-0.358% elapsed=76s eta=76s
+[16/30] idx=9242 prob_up=0.47 pred_mean=+0.116% actual=-1.519% elapsed=82s eta=71s
+[17/30] idx=9831 prob_up=1.00 pred_mean=+2.943% actual=+3.462% elapsed=87s eta=66s
+[18/30] idx=10421 prob_up=0.07 pred_mean=-1.768% actual=-1.578% elapsed=92s eta=61s
+[19/30] idx=11010 prob_up=0.00 pred_mean=-2.086% actual=-0.317% elapsed=97s eta=56s
+[20/30] idx=11600 prob_up=0.33 pred_mean=+0.032% actual=-0.771% elapsed=103s eta=51s
+[21/30] idx=12189 prob_up=0.13 pred_mean=-0.871% actual=-0.258% elapsed=108s eta=46s
+[22/30] idx=12779 prob_up=0.40 pred_mean=-0.132% actual=+0.599% elapsed=113s eta=41s
+[23/30] idx=13368 prob_up=1.00 pred_mean=+9.886% actual=+0.578% elapsed=118s eta=36s
+[24/30] idx=13958 prob_up=0.00 pred_mean=-1.958% actual=-2.259% elapsed=124s eta=31s
+[25/30] idx=14547 prob_up=0.00 pred_mean=-4.584% actual=-1.180% elapsed=129s eta=26s
+[26/30] idx=15137 prob_up=1.00 pred_mean=+7.475% actual=-1.947% elapsed=134s eta=21s
+[27/30] idx=15726 prob_up=1.00 pred_mean=+7.372% actual=+2.824% elapsed=139s eta=15s
+[28/30] idx=16316 prob_up=0.67 pred_mean=+0.346% actual=+0.434% elapsed=144s eta=10s
+[29/30] idx=16905 prob_up=0.00 pred_mean=-5.038% actual=-0.847% elapsed=150s eta=5s
+[30/30] idx=17495 prob_up=0.33 pred_mean=-0.429% actual=+0.839% elapsed=155s eta=0s
+
+========= ALPHA SUMMARY =========
+樣本數              : 30
+方向準確率 (prob>0.5): 0.733
+方向準確率 (mean_ret): 0.667
+IC (Spearman)        : +0.423
+模擬 PnL 累積收益    : +22.578%  (每筆 horizon 收益相加)
+勝率                 : 0.733
+高信心樣本 (|p-.5|>.2): 24  準確率: 0.792
+================================
+

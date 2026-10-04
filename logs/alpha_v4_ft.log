@@ -1,0 +1,48 @@
+Loading weights from local directory
+Loading weights from local directory
+  [ft_multi] 1/300 elapsed=3s eta=816s
+  [ft_multi] 20/300 elapsed=51s eta=712s
+  [ft_multi] 40/300 elapsed=102s eta=660s
+  [ft_multi] 60/300 elapsed=152s eta=609s
+  [ft_multi] 80/300 elapsed=203s eta=558s
+  [ft_multi] 100/300 elapsed=254s eta=507s
+  [ft_multi] 120/300 elapsed=304s eta=456s
+  [ft_multi] 140/300 elapsed=355s eta=406s
+  [ft_multi] 160/300 elapsed=406s eta=355s
+  [ft_multi] 180/300 elapsed=456s eta=304s
+  [ft_multi] 200/300 elapsed=507s eta=254s
+  [ft_multi] 220/300 elapsed=558s eta=203s
+  [ft_multi] 240/300 elapsed=608s eta=152s
+  [ft_multi] 260/300 elapsed=659s eta=101s
+  [ft_multi] 280/300 elapsed=710s eta=51s
+  [ft_multi] 300/300 elapsed=761s eta=0s
+saved → /home/anson/Kronos/alpha_v4_ft_multi/raw.pkl
+
+========== MODEL: ft_multi ==========
+N=300, samples=20, horizon=12h
+
+=== 採樣數比較 (cost=0%) ===
+ samples   n   acc     ic win_rate sharpe cum_cmp   maxdd
+       5 300 0.487 -0.005    0.487  -3.23 -47.12% -55.18%
+      10 300 0.533 +0.015    0.533  -1.20 -23.23% -31.70%
+      20 300 0.503 -0.040    0.503  -2.13 -35.33% -41.85%
+
+=== 交易成本敏感度 ===
+ cost_bp   n win_rate sharpe cum_cmp   maxdd
+       0 300    0.503  -2.13 -35.33% -41.85%
+       4 300    0.480  -2.78 -42.66% -45.75%
+       8 300    0.463  -3.43 -49.15% -49.84%
+      16 300    0.440  -4.73 -60.03% -60.30%
+
+=== Walk-forward (cost=0.08%) ===
+  seg   n   acc win_rate sharpe cum_cmp   maxdd
+前 60% 180 0.478    0.428  -5.12 -43.38% -44.03%
+後 40% 120 0.542    0.517  -1.14 -10.20% -16.87%
+   全部 300 0.503    0.463  -3.43 -49.15% -49.84%
+
+=== Regime 拆解 (200h slope) ===
+regime   n   acc long_share win_rate sharpe cum_cmp   maxdd
+    UP 136 0.515       0.40    0.478  -1.76 -14.04% -15.71%
+  SIDE  13 0.538       0.38    0.538  -5.22  -4.53%  -7.03%
+  DOWN 151 0.490       0.62    0.444  -4.60 -38.04% -44.93%
+   ALL 300 0.503       0.51    0.463  -3.43 -49.15% -49.84%

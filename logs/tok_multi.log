@@ -1,0 +1,338 @@
+[DDP Setup] Global Rank: 0/1, Local Rank (GPU): 0 on device 0
+[rank0]:[W515 19:19:05.808483950 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Loading weights from local directory
+Model Size: 4.0M
+[Rank 0] BATCHSIZE (per GPU): 32
+[Rank 0] Effective total batch size: 32
+[Rank 0] Creating distributed dataloaders...
+[TRAIN] Pre-computing sample indices...
+[TRAIN] Found 64961 possible samples. Using 48000 per epoch.
+[VAL] Pre-computing sample indices...
+[VAL] Found 31989 possible samples. Using 4800 per epoch.
+[Rank 0] Train dataset size: 48000, Validation dataset size: 4800
+[Rank 0] Dataloaders created. Train steps/epoch: 1500, Val steps: 150
+[Rank 0, Epoch 1/15, Step 100/1500] LR 0.000030, Loss: -0.0272
+[Rank 0, Epoch 1/15, Step 200/1500] LR 0.000056, Loss: -0.0275
+[Rank 0, Epoch 1/15, Step 300/1500] LR 0.000095, Loss: -0.0277
+[Rank 0, Epoch 1/15, Step 400/1500] LR 0.000136, Loss: -0.0283
+[Rank 0, Epoch 1/15, Step 500/1500] LR 0.000172, Loss: -0.0275
+[Rank 0, Epoch 1/15, Step 600/1500] LR 0.000195, Loss: -0.0277
+[Rank 0, Epoch 1/15, Step 700/1500] LR 0.000200, Loss: -0.0280
+[Rank 0, Epoch 1/15, Step 800/1500] LR 0.000200, Loss: -0.0279
+[Rank 0, Epoch 1/15, Step 900/1500] LR 0.000200, Loss: -0.0280
+[Rank 0, Epoch 1/15, Step 1000/1500] LR 0.000200, Loss: -0.0289
+[Rank 0, Epoch 1/15, Step 1100/1500] LR 0.000200, Loss: -0.0290
+[Rank 0, Epoch 1/15, Step 1200/1500] LR 0.000200, Loss: -0.0291
+[Rank 0, Epoch 1/15, Step 1300/1500] LR 0.000200, Loss: -0.0288
+[Rank 0, Epoch 1/15, Step 1400/1500] LR 0.000199, Loss: -0.0285
+[Rank 0, Epoch 1/15, Step 1500/1500] LR 0.000199, Loss: -0.0278
+
+--- Epoch 1/15 Summary ---
+Validation Loss: 0.0053
+Time This Epoch: 0:04:15
+Total Time Elapsed: 0:04:15
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0053)
+[Rank 0, Epoch 2/15, Step 100/1500] LR 0.000199, Loss: -0.0287
+[Rank 0, Epoch 2/15, Step 200/1500] LR 0.000199, Loss: -0.0284
+[Rank 0, Epoch 2/15, Step 300/1500] LR 0.000199, Loss: -0.0285
+[Rank 0, Epoch 2/15, Step 400/1500] LR 0.000198, Loss: -0.0287
+[Rank 0, Epoch 2/15, Step 500/1500] LR 0.000198, Loss: -0.0288
+[Rank 0, Epoch 2/15, Step 600/1500] LR 0.000198, Loss: -0.0286
+[Rank 0, Epoch 2/15, Step 700/1500] LR 0.000198, Loss: -0.0285
+[Rank 0, Epoch 2/15, Step 800/1500] LR 0.000197, Loss: -0.0284
+[Rank 0, Epoch 2/15, Step 900/1500] LR 0.000197, Loss: -0.0292
+[Rank 0, Epoch 2/15, Step 1000/1500] LR 0.000197, Loss: -0.0286
+[Rank 0, Epoch 2/15, Step 1100/1500] LR 0.000196, Loss: -0.0286
+[Rank 0, Epoch 2/15, Step 1200/1500] LR 0.000196, Loss: -0.0287
+[Rank 0, Epoch 2/15, Step 1300/1500] LR 0.000195, Loss: -0.0286
+[Rank 0, Epoch 2/15, Step 1400/1500] LR 0.000195, Loss: -0.0288
+[Rank 0, Epoch 2/15, Step 1500/1500] LR 0.000194, Loss: -0.0281
+
+--- Epoch 2/15 Summary ---
+Validation Loss: 0.0052
+Time This Epoch: 0:04:14
+Total Time Elapsed: 0:08:30
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0052)
+[Rank 0, Epoch 3/15, Step 100/1500] LR 0.000194, Loss: -0.0299
+[Rank 0, Epoch 3/15, Step 200/1500] LR 0.000193, Loss: -0.0290
+[Rank 0, Epoch 3/15, Step 300/1500] LR 0.000193, Loss: -0.0289
+[Rank 0, Epoch 3/15, Step 400/1500] LR 0.000192, Loss: -0.0290
+[Rank 0, Epoch 3/15, Step 500/1500] LR 0.000192, Loss: -0.0290
+[Rank 0, Epoch 3/15, Step 600/1500] LR 0.000191, Loss: -0.0291
+[Rank 0, Epoch 3/15, Step 700/1500] LR 0.000191, Loss: -0.0292
+[Rank 0, Epoch 3/15, Step 800/1500] LR 0.000190, Loss: -0.0284
+[Rank 0, Epoch 3/15, Step 900/1500] LR 0.000189, Loss: -0.0290
+[Rank 0, Epoch 3/15, Step 1000/1500] LR 0.000189, Loss: -0.0292
+[Rank 0, Epoch 3/15, Step 1100/1500] LR 0.000188, Loss: -0.0286
+[Rank 0, Epoch 3/15, Step 1200/1500] LR 0.000187, Loss: -0.0296
+[Rank 0, Epoch 3/15, Step 1300/1500] LR 0.000187, Loss: -0.0293
+[Rank 0, Epoch 3/15, Step 1400/1500] LR 0.000186, Loss: -0.0289
+[Rank 0, Epoch 3/15, Step 1500/1500] LR 0.000185, Loss: -0.0292
+
+--- Epoch 3/15 Summary ---
+Validation Loss: 0.0052
+Time This Epoch: 0:02:57
+Total Time Elapsed: 0:11:28
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0052)
+[Rank 0, Epoch 4/15, Step 100/1500] LR 0.000184, Loss: -0.0289
+[Rank 0, Epoch 4/15, Step 200/1500] LR 0.000184, Loss: -0.0287
+[Rank 0, Epoch 4/15, Step 300/1500] LR 0.000183, Loss: -0.0285
+[Rank 0, Epoch 4/15, Step 400/1500] LR 0.000182, Loss: -0.0286
+[Rank 0, Epoch 4/15, Step 500/1500] LR 0.000181, Loss: -0.0285
+[Rank 0, Epoch 4/15, Step 600/1500] LR 0.000180, Loss: -0.0289
+[Rank 0, Epoch 4/15, Step 700/1500] LR 0.000180, Loss: -0.0288
+[Rank 0, Epoch 4/15, Step 800/1500] LR 0.000179, Loss: -0.0292
+[Rank 0, Epoch 4/15, Step 900/1500] LR 0.000178, Loss: -0.0293
+[Rank 0, Epoch 4/15, Step 1000/1500] LR 0.000177, Loss: -0.0290
+[Rank 0, Epoch 4/15, Step 1100/1500] LR 0.000176, Loss: -0.0289
+[Rank 0, Epoch 4/15, Step 1200/1500] LR 0.000175, Loss: -0.0298
+[Rank 0, Epoch 4/15, Step 1300/1500] LR 0.000174, Loss: -0.0301
+[Rank 0, Epoch 4/15, Step 1400/1500] LR 0.000173, Loss: -0.0292
+[Rank 0, Epoch 4/15, Step 1500/1500] LR 0.000172, Loss: -0.0298
+
+--- Epoch 4/15 Summary ---
+Validation Loss: 0.0051
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:13:25
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0051)
+[Rank 0, Epoch 5/15, Step 100/1500] LR 0.000171, Loss: -0.0292
+[Rank 0, Epoch 5/15, Step 200/1500] LR 0.000170, Loss: -0.0293
+[Rank 0, Epoch 5/15, Step 300/1500] LR 0.000169, Loss: -0.0291
+[Rank 0, Epoch 5/15, Step 400/1500] LR 0.000168, Loss: -0.0293
+[Rank 0, Epoch 5/15, Step 500/1500] LR 0.000167, Loss: -0.0284
+[Rank 0, Epoch 5/15, Step 600/1500] LR 0.000166, Loss: -0.0290
+[Rank 0, Epoch 5/15, Step 700/1500] LR 0.000165, Loss: -0.0293
+[Rank 0, Epoch 5/15, Step 800/1500] LR 0.000164, Loss: -0.0290
+[Rank 0, Epoch 5/15, Step 900/1500] LR 0.000162, Loss: -0.0291
+[Rank 0, Epoch 5/15, Step 1000/1500] LR 0.000161, Loss: -0.0295
+[Rank 0, Epoch 5/15, Step 1100/1500] LR 0.000160, Loss: -0.0293
+[Rank 0, Epoch 5/15, Step 1200/1500] LR 0.000159, Loss: -0.0287
+[Rank 0, Epoch 5/15, Step 1300/1500] LR 0.000158, Loss: -0.0286
+[Rank 0, Epoch 5/15, Step 1400/1500] LR 0.000157, Loss: -0.0294
+[Rank 0, Epoch 5/15, Step 1500/1500] LR 0.000155, Loss: -0.0292
+
+--- Epoch 5/15 Summary ---
+Validation Loss: 0.0051
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:15:21
+
+[Rank 0, Epoch 6/15, Step 100/1500] LR 0.000154, Loss: -0.0295
+[Rank 0, Epoch 6/15, Step 200/1500] LR 0.000153, Loss: -0.0290
+[Rank 0, Epoch 6/15, Step 300/1500] LR 0.000152, Loss: -0.0295
+[Rank 0, Epoch 6/15, Step 400/1500] LR 0.000151, Loss: -0.0297
+[Rank 0, Epoch 6/15, Step 500/1500] LR 0.000149, Loss: -0.0299
+[Rank 0, Epoch 6/15, Step 600/1500] LR 0.000148, Loss: -0.0296
+[Rank 0, Epoch 6/15, Step 700/1500] LR 0.000147, Loss: -0.0295
+[Rank 0, Epoch 6/15, Step 800/1500] LR 0.000146, Loss: -0.0298
+[Rank 0, Epoch 6/15, Step 900/1500] LR 0.000144, Loss: -0.0298
+[Rank 0, Epoch 6/15, Step 1000/1500] LR 0.000143, Loss: -0.0293
+[Rank 0, Epoch 6/15, Step 1100/1500] LR 0.000142, Loss: -0.0296
+[Rank 0, Epoch 6/15, Step 1200/1500] LR 0.000140, Loss: -0.0289
+[Rank 0, Epoch 6/15, Step 1300/1500] LR 0.000139, Loss: -0.0294
+[Rank 0, Epoch 6/15, Step 1400/1500] LR 0.000138, Loss: -0.0291
+[Rank 0, Epoch 6/15, Step 1500/1500] LR 0.000136, Loss: -0.0308
+
+--- Epoch 6/15 Summary ---
+Validation Loss: 0.0049
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:17:18
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0049)
+[Rank 0, Epoch 7/15, Step 100/1500] LR 0.000135, Loss: -0.0297
+[Rank 0, Epoch 7/15, Step 200/1500] LR 0.000134, Loss: -0.0267
+[Rank 0, Epoch 7/15, Step 300/1500] LR 0.000132, Loss: -0.0299
+[Rank 0, Epoch 7/15, Step 400/1500] LR 0.000131, Loss: -0.0294
+[Rank 0, Epoch 7/15, Step 500/1500] LR 0.000130, Loss: -0.0299
+[Rank 0, Epoch 7/15, Step 600/1500] LR 0.000128, Loss: -0.0303
+[Rank 0, Epoch 7/15, Step 700/1500] LR 0.000127, Loss: -0.0295
+[Rank 0, Epoch 7/15, Step 800/1500] LR 0.000125, Loss: -0.0300
+[Rank 0, Epoch 7/15, Step 900/1500] LR 0.000124, Loss: -0.0299
+[Rank 0, Epoch 7/15, Step 1000/1500] LR 0.000123, Loss: -0.0298
+[Rank 0, Epoch 7/15, Step 1100/1500] LR 0.000121, Loss: -0.0308
+[Rank 0, Epoch 7/15, Step 1200/1500] LR 0.000120, Loss: -0.0302
+[Rank 0, Epoch 7/15, Step 1300/1500] LR 0.000118, Loss: -0.0295
+[Rank 0, Epoch 7/15, Step 1400/1500] LR 0.000117, Loss: -0.0300
+[Rank 0, Epoch 7/15, Step 1500/1500] LR 0.000116, Loss: -0.0301
+
+--- Epoch 7/15 Summary ---
+Validation Loss: 0.0047
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:19:15
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0047)
+[Rank 0, Epoch 8/15, Step 100/1500] LR 0.000114, Loss: -0.0290
+[Rank 0, Epoch 8/15, Step 200/1500] LR 0.000113, Loss: -0.0292
+[Rank 0, Epoch 8/15, Step 300/1500] LR 0.000111, Loss: -0.0299
+[Rank 0, Epoch 8/15, Step 400/1500] LR 0.000110, Loss: -0.0297
+[Rank 0, Epoch 8/15, Step 500/1500] LR 0.000108, Loss: -0.0300
+[Rank 0, Epoch 8/15, Step 600/1500] LR 0.000107, Loss: -0.0301
+[Rank 0, Epoch 8/15, Step 700/1500] LR 0.000106, Loss: -0.0302
+[Rank 0, Epoch 8/15, Step 800/1500] LR 0.000104, Loss: -0.0298
+[Rank 0, Epoch 8/15, Step 900/1500] LR 0.000103, Loss: -0.0302
+[Rank 0, Epoch 8/15, Step 1000/1500] LR 0.000101, Loss: -0.0304
+[Rank 0, Epoch 8/15, Step 1100/1500] LR 0.000100, Loss: -0.0298
+[Rank 0, Epoch 8/15, Step 1200/1500] LR 0.000098, Loss: -0.0291
+[Rank 0, Epoch 8/15, Step 1300/1500] LR 0.000097, Loss: -0.0304
+[Rank 0, Epoch 8/15, Step 1400/1500] LR 0.000095, Loss: -0.0301
+[Rank 0, Epoch 8/15, Step 1500/1500] LR 0.000094, Loss: -0.0298
+
+--- Epoch 8/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:21:12
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0046)
+[Rank 0, Epoch 9/15, Step 100/1500] LR 0.000093, Loss: -0.0300
+[Rank 0, Epoch 9/15, Step 200/1500] LR 0.000091, Loss: -0.0304
+[Rank 0, Epoch 9/15, Step 300/1500] LR 0.000090, Loss: -0.0299
+[Rank 0, Epoch 9/15, Step 400/1500] LR 0.000088, Loss: -0.0297
+[Rank 0, Epoch 9/15, Step 500/1500] LR 0.000087, Loss: -0.0298
+[Rank 0, Epoch 9/15, Step 600/1500] LR 0.000085, Loss: -0.0301
+[Rank 0, Epoch 9/15, Step 700/1500] LR 0.000084, Loss: -0.0303
+[Rank 0, Epoch 9/15, Step 800/1500] LR 0.000083, Loss: -0.0303
+[Rank 0, Epoch 9/15, Step 900/1500] LR 0.000081, Loss: -0.0300
+[Rank 0, Epoch 9/15, Step 1000/1500] LR 0.000080, Loss: -0.0300
+[Rank 0, Epoch 9/15, Step 1100/1500] LR 0.000078, Loss: -0.0301
+[Rank 0, Epoch 9/15, Step 1200/1500] LR 0.000077, Loss: -0.0301
+[Rank 0, Epoch 9/15, Step 1300/1500] LR 0.000076, Loss: -0.0297
+[Rank 0, Epoch 9/15, Step 1400/1500] LR 0.000074, Loss: -0.0298
+[Rank 0, Epoch 9/15, Step 1500/1500] LR 0.000073, Loss: -0.0306
+
+--- Epoch 9/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:23:08
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0046)
+[Rank 0, Epoch 10/15, Step 100/1500] LR 0.000071, Loss: -0.0306
+[Rank 0, Epoch 10/15, Step 200/1500] LR 0.000070, Loss: -0.0289
+[Rank 0, Epoch 10/15, Step 300/1500] LR 0.000069, Loss: -0.0301
+[Rank 0, Epoch 10/15, Step 400/1500] LR 0.000067, Loss: -0.0296
+[Rank 0, Epoch 10/15, Step 500/1500] LR 0.000066, Loss: -0.0298
+[Rank 0, Epoch 10/15, Step 600/1500] LR 0.000065, Loss: -0.0305
+[Rank 0, Epoch 10/15, Step 700/1500] LR 0.000063, Loss: -0.0303
+[Rank 0, Epoch 10/15, Step 800/1500] LR 0.000062, Loss: -0.0304
+[Rank 0, Epoch 10/15, Step 900/1500] LR 0.000061, Loss: -0.0301
+[Rank 0, Epoch 10/15, Step 1000/1500] LR 0.000059, Loss: -0.0299
+[Rank 0, Epoch 10/15, Step 1100/1500] LR 0.000058, Loss: -0.0282
+[Rank 0, Epoch 10/15, Step 1200/1500] LR 0.000057, Loss: -0.0303
+[Rank 0, Epoch 10/15, Step 1300/1500] LR 0.000055, Loss: -0.0300
+[Rank 0, Epoch 10/15, Step 1400/1500] LR 0.000054, Loss: -0.0304
+[Rank 0, Epoch 10/15, Step 1500/1500] LR 0.000053, Loss: -0.0299
+
+--- Epoch 10/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:25:05
+
+[Rank 0, Epoch 11/15, Step 100/1500] LR 0.000052, Loss: -0.0296
+[Rank 0, Epoch 11/15, Step 200/1500] LR 0.000050, Loss: -0.0298
+[Rank 0, Epoch 11/15, Step 300/1500] LR 0.000049, Loss: -0.0308
+[Rank 0, Epoch 11/15, Step 400/1500] LR 0.000048, Loss: -0.0291
+[Rank 0, Epoch 11/15, Step 500/1500] LR 0.000047, Loss: -0.0295
+[Rank 0, Epoch 11/15, Step 600/1500] LR 0.000045, Loss: -0.0295
+[Rank 0, Epoch 11/15, Step 700/1500] LR 0.000044, Loss: -0.0301
+[Rank 0, Epoch 11/15, Step 800/1500] LR 0.000043, Loss: -0.0299
+[Rank 0, Epoch 11/15, Step 900/1500] LR 0.000042, Loss: -0.0304
+[Rank 0, Epoch 11/15, Step 1000/1500] LR 0.000041, Loss: -0.0301
+[Rank 0, Epoch 11/15, Step 1100/1500] LR 0.000040, Loss: -0.0301
+[Rank 0, Epoch 11/15, Step 1200/1500] LR 0.000038, Loss: -0.0302
+[Rank 0, Epoch 11/15, Step 1300/1500] LR 0.000037, Loss: -0.0306
+[Rank 0, Epoch 11/15, Step 1400/1500] LR 0.000036, Loss: -0.0303
+[Rank 0, Epoch 11/15, Step 1500/1500] LR 0.000035, Loss: -0.0299
+
+--- Epoch 11/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:27:02
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_multi_tokenizer/checkpoints/best_model (Val Loss: 0.0046)
+[Rank 0, Epoch 12/15, Step 100/1500] LR 0.000034, Loss: -0.0294
+[Rank 0, Epoch 12/15, Step 200/1500] LR 0.000033, Loss: -0.0299
+[Rank 0, Epoch 12/15, Step 300/1500] LR 0.000032, Loss: -0.0301
+[Rank 0, Epoch 12/15, Step 400/1500] LR 0.000031, Loss: -0.0295
+[Rank 0, Epoch 12/15, Step 500/1500] LR 0.000030, Loss: -0.0299
+[Rank 0, Epoch 12/15, Step 600/1500] LR 0.000029, Loss: -0.0304
+[Rank 0, Epoch 12/15, Step 700/1500] LR 0.000028, Loss: -0.0304
+[Rank 0, Epoch 12/15, Step 800/1500] LR 0.000027, Loss: -0.0300
+[Rank 0, Epoch 12/15, Step 900/1500] LR 0.000026, Loss: -0.0298
+[Rank 0, Epoch 12/15, Step 1000/1500] LR 0.000025, Loss: -0.0303
+[Rank 0, Epoch 12/15, Step 1100/1500] LR 0.000024, Loss: -0.0299
+[Rank 0, Epoch 12/15, Step 1200/1500] LR 0.000023, Loss: -0.0299
+[Rank 0, Epoch 12/15, Step 1300/1500] LR 0.000022, Loss: -0.0302
+[Rank 0, Epoch 12/15, Step 1400/1500] LR 0.000021, Loss: -0.0300
+[Rank 0, Epoch 12/15, Step 1500/1500] LR 0.000020, Loss: -0.0303
+
+--- Epoch 12/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:28:58
+
+[Rank 0, Epoch 13/15, Step 100/1500] LR 0.000019, Loss: -0.0302
+[Rank 0, Epoch 13/15, Step 200/1500] LR 0.000019, Loss: -0.0295
+[Rank 0, Epoch 13/15, Step 300/1500] LR 0.000018, Loss: -0.0303
+[Rank 0, Epoch 13/15, Step 400/1500] LR 0.000017, Loss: -0.0302
+[Rank 0, Epoch 13/15, Step 500/1500] LR 0.000016, Loss: -0.0301
+[Rank 0, Epoch 13/15, Step 600/1500] LR 0.000015, Loss: -0.0297
+[Rank 0, Epoch 13/15, Step 700/1500] LR 0.000015, Loss: -0.0303
+[Rank 0, Epoch 13/15, Step 800/1500] LR 0.000014, Loss: -0.0301
+[Rank 0, Epoch 13/15, Step 900/1500] LR 0.000013, Loss: -0.0302
+[Rank 0, Epoch 13/15, Step 1000/1500] LR 0.000012, Loss: -0.0305
+[Rank 0, Epoch 13/15, Step 1100/1500] LR 0.000012, Loss: -0.0301
+[Rank 0, Epoch 13/15, Step 1200/1500] LR 0.000011, Loss: -0.0295
+[Rank 0, Epoch 13/15, Step 1300/1500] LR 0.000010, Loss: -0.0300
+[Rank 0, Epoch 13/15, Step 1400/1500] LR 0.000010, Loss: -0.0303
+[Rank 0, Epoch 13/15, Step 1500/1500] LR 0.000009, Loss: -0.0302
+
+--- Epoch 13/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:30:55
+
+[Rank 0, Epoch 14/15, Step 100/1500] LR 0.000009, Loss: -0.0307
+[Rank 0, Epoch 14/15, Step 200/1500] LR 0.000008, Loss: -0.0302
+[Rank 0, Epoch 14/15, Step 300/1500] LR 0.000007, Loss: -0.0298
+[Rank 0, Epoch 14/15, Step 400/1500] LR 0.000007, Loss: -0.0296
+[Rank 0, Epoch 14/15, Step 500/1500] LR 0.000006, Loss: -0.0299
+[Rank 0, Epoch 14/15, Step 600/1500] LR 0.000006, Loss: -0.0298
+[Rank 0, Epoch 14/15, Step 700/1500] LR 0.000005, Loss: -0.0304
+[Rank 0, Epoch 14/15, Step 800/1500] LR 0.000005, Loss: -0.0293
+[Rank 0, Epoch 14/15, Step 900/1500] LR 0.000005, Loss: -0.0304
+[Rank 0, Epoch 14/15, Step 1000/1500] LR 0.000004, Loss: -0.0297
+[Rank 0, Epoch 14/15, Step 1100/1500] LR 0.000004, Loss: -0.0296
+[Rank 0, Epoch 14/15, Step 1200/1500] LR 0.000003, Loss: -0.0305
+[Rank 0, Epoch 14/15, Step 1300/1500] LR 0.000003, Loss: -0.0299
+[Rank 0, Epoch 14/15, Step 1400/1500] LR 0.000003, Loss: -0.0300
+[Rank 0, Epoch 14/15, Step 1500/1500] LR 0.000002, Loss: -0.0302
+
+--- Epoch 14/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:32:52
+
+[Rank 0, Epoch 15/15, Step 100/1500] LR 0.000002, Loss: -0.0296
+[Rank 0, Epoch 15/15, Step 200/1500] LR 0.000002, Loss: -0.0305
+[Rank 0, Epoch 15/15, Step 300/1500] LR 0.000001, Loss: -0.0303
+[Rank 0, Epoch 15/15, Step 400/1500] LR 0.000001, Loss: -0.0301
+[Rank 0, Epoch 15/15, Step 500/1500] LR 0.000001, Loss: -0.0296
+[Rank 0, Epoch 15/15, Step 600/1500] LR 0.000001, Loss: -0.0300
+[Rank 0, Epoch 15/15, Step 700/1500] LR 0.000001, Loss: -0.0303
+[Rank 0, Epoch 15/15, Step 800/1500] LR 0.000001, Loss: -0.0296
+[Rank 0, Epoch 15/15, Step 900/1500] LR 0.000000, Loss: -0.0301
+[Rank 0, Epoch 15/15, Step 1000/1500] LR 0.000000, Loss: -0.0294
+[Rank 0, Epoch 15/15, Step 1100/1500] LR 0.000000, Loss: -0.0299
+[Rank 0, Epoch 15/15, Step 1200/1500] LR 0.000000, Loss: -0.0305
+[Rank 0, Epoch 15/15, Step 1300/1500] LR 0.000000, Loss: -0.0309
+[Rank 0, Epoch 15/15, Step 1400/1500] LR 0.000000, Loss: -0.0292
+[Rank 0, Epoch 15/15, Step 1500/1500] LR 0.000000, Loss: -0.0308
+
+--- Epoch 15/15 Summary ---
+Validation Loss: 0.0046
+Time This Epoch: 0:01:56
+Total Time Elapsed: 0:34:49
+
+Training finished. Summary file saved.

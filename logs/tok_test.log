@@ -1,0 +1,71 @@
+[DDP Setup] Global Rank: 0/1, Local Rank (GPU): 0 on device 0
+[rank0]:[W515 11:17:14.968215824 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Loading weights from local directory
+Model Size: 4.0M
+[Rank 0] BATCHSIZE (per GPU): 32
+[Rank 0] Effective total batch size: 32
+[Rank 0] Creating distributed dataloaders...
+[TRAIN] Pre-computing sample indices...
+[TRAIN] Found 174876 possible samples. Using 25600 per epoch.
+[VAL] Pre-computing sample indices...
+[VAL] Found 37557 possible samples. Using 3200 per epoch.
+[Rank 0] Train dataset size: 25600, Validation dataset size: 3200
+[Rank 0] Dataloaders created. Train steps/epoch: 800, Val steps: 100
+[Rank 0, Epoch 1/5, Step 50/800] LR 0.000088, Loss: -0.0270
+[Rank 0, Epoch 1/5, Step 100/800] LR 0.000189, Loss: -0.0265
+[Rank 0, Epoch 1/5, Step 150/800] LR 0.000200, Loss: -0.0269
+[Rank 0, Epoch 1/5, Step 200/800] LR 0.000200, Loss: -0.0277
+[Rank 0, Epoch 1/5, Step 250/800] LR 0.000199, Loss: -0.0275
+[Rank 0, Epoch 1/5, Step 300/800] LR 0.000199, Loss: -0.0268
+[Rank 0, Epoch 1/5, Step 350/800] LR 0.000198, Loss: -0.0276
+[Rank 0, Epoch 1/5, Step 400/800] LR 0.000197, Loss: -0.0277
+[Rank 0, Epoch 1/5, Step 450/800] LR 0.000196, Loss: -0.0279
+[Rank 0, Epoch 1/5, Step 500/800] LR 0.000195, Loss: -0.0282
+[Rank 0, Epoch 1/5, Step 550/800] LR 0.000194, Loss: -0.0273
+[Rank 0, Epoch 1/5, Step 600/800] LR 0.000193, Loss: -0.0271
+[Rank 0, Epoch 1/5, Step 650/800] LR 0.000191, Loss: -0.0291
+[Rank 0, Epoch 1/5, Step 700/800] LR 0.000189, Loss: -0.0273
+[Rank 0, Epoch 1/5, Step 750/800] LR 0.000187, Loss: -0.0279
+[Rank 0, Epoch 1/5, Step 800/800] LR 0.000185, Loss: -0.0284
+
+--- Epoch 1/5 Summary ---
+Validation Loss: 0.0051
+Time This Epoch: 0:01:06
+Total Time Elapsed: 0:01:06
+
+Best model saved to /home/anson/Kronos/finetune_btc/outputs/models/btc_tokenizer/checkpoints/best_model (Val Loss: 0.0051)
+[Rank 0, Epoch 2/5, Step 50/800] LR 0.000183, Loss: -0.0290
+[Rank 0, Epoch 2/5, Step 100/800] LR 0.000181, Loss: -0.0283
+[Rank 0, Epoch 2/5, Step 150/800] LR 0.000178, Loss: -0.0286
+[Rank 0, Epoch 2/5, Step 200/800] LR 0.000176, Loss: -0.0282
+[Rank 0, Epoch 2/5, Step 250/800] LR 0.000173, Loss: -0.0274
+W0515 11:18:42.889000 65894 torch/distributed/elastic/agent/server/api.py:704] Received 15 death signal, shutting down workers
+W0515 11:18:42.889000 65894 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 65916 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/home/anson/quant-btc-gold/.venv/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 696, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 855, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/anson/quant-btc-gold/.venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 65894 got signal: 15
